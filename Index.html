@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foro: IA — Ventajas y Desventajas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>¿Y TU QUE OPINAS DE LA IA?</h1>
+    <p>Queremos saber tu opinion.</p>
+  </header>
+
+  <section class="intro">
+    <div class="intro-content">
+      <h2>Bienvenido a nuestro Foro</h2>
+      <p>La Inteligencia Artificial (IA) es una rama de la informática que desarrolla sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como aprender, reconocer imágenes, comprender lenguaje, resolver problemas y tomar decisiones. Actualmente, la IA se utiliza en asistentes virtuales, traductores, vehículos autónomos, diagnósticos médicos y muchas otras aplicaciones.</p>
+      
+      <h3>¿Por qué estamos aquí?</h3>
+      <p>La IA no es inherentemente buena ni mala; su impacto depende de cómo se diseñe y utilice. Por ello, existen opiniones diversas sobre sus beneficios y riesgos.</p>
+      <ul class="intro-list">
+        <li><strong>Ventajas:</strong> Mejora la eficiencia y productividad en muchas actividades.
+Ayuda a analizar grandes cantidades de información en poco tiempo.
+Puede apoyar avances en medicina, educación y ciencia.
+Facilita tareas cotidianas mediante asistentes digitales y automatización.</li>
+        <li><strong>Desventajas:</strong> Puede afectar algunos empleos al automatizar tareas.
+Existen preocupaciones sobre la privacidad y el uso de datos personales.
+Los sistemas de IA pueden cometer errores o reflejar sesgos presentes en los datos con los que fueron entrenados.
+Su uso irresponsable puede contribuir a la difusión de información falsa o engañosa.</li>
+        <li><strong>Y TU</strong> ¿Como crees que deberia regularse la IA?</li>
+      </ul>
+      
+      <p>Da tu opinion en la parte de abajo de la pagina.</p>
+    </div>
+  </section>
+
+  <main>
+    <section id="new-topic">
+      <h2>Mencion de tema especifico</h2>
+      <form id="topic-form">
+        <input id="topic-title" placeholder="Titulo" required />
+        <input id="topic-author" placeholder="Autor (puede ser anonimo)" />
+        <select id="topic-type">
+          <option value="pro">Ventaja</option>
+          <option value="con">Desventaja</option>
+          <option value="neutral">Neutral</option>
+        </select>
+        <textarea id="topic-body" rows="4" placeholder="¿Que diras?" required></textarea>
+        <div class="actions">
+          <button type="submit">Subir tu tema</button>
+          
+        </div>
+      </form>
+    </section>
+
+    <section id="topics">
+      <h2>Temas</h2>
+      <input id="search" placeholder="Buscar temas..." />
+      <ul id="topics-list"></ul>
+    </section>
+
+    <section id="thread" class="hidden">
+      <button id="back">← Volver a temas</button>
+      <article id="thread-article"></article>
+      <form id="comment-form">
+        <input id="comment-author" placeholder="Tu nombre (opcional)" />
+        <textarea id="comment-body" rows="3" placeholder="Respuesta..." required></textarea>
+        <button type="submit">Publicar respuesta</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>Gracias por tu opinion</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+:root{
+  --bg:#0f1720; --card:#0b1220; --muted:#9aa4b2; --accent:#4f46e5;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:linear-gradient(180deg,#071024, #0f1725); color:#e6eef8; margin:0; padding:24px}
+header{max-width:900px;margin:0 auto 18px}
+h1{margin:0 0 6px}
+p{margin:0;color:var(--muted)}
+.intro{max-width:900px;margin:0 auto 32px;padding:32px;background:linear-gradient(135deg,rgba(79,70,229,0.1) 0%, rgba(79,70,229,0.05) 100%);border:1px solid rgba(79,70,229,0.2);border-radius:12px}
+.intro-content h2{margin-top:0;color:var(--accent);font-size:28px}
+.intro-content h3{color:var(--accent);margin-top:20px;margin-bottom:10px}
+.intro-content p{color:#e6eef8;margin:12px 0;line-height:1.6}
+.intro-list{list-style:none;padding:0;margin:16px 0}
+.intro-list li{padding:8px 0;color:#e6eef8;margin-left:20px;position:relative}
+.intro-list li:before{content:"→";position:absolute;left:0;color:var(--accent)}
+main{max-width:900px;margin:18px auto;display:grid;grid-template-columns:1fr;gap:18px}
+section{background:var(--card);padding:16px;border-radius:10px}
+input,textarea,select{width:100%;padding:8px;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit;margin:8px 0}
+.actions{display:flex;gap:8px}
+button{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+button#clear-storage{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+ul{list-style:none;padding:0;margin:0}
+li.topic{padding:12px;border-radius:8px;margin-bottom:8px;border:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.meta{color:var(--muted);font-size:13px}
+.tag{padding:4px 8px;border-radius:999px;font-size:12px}
+.tag.pro{background:rgba(79,70,229,0.12);color:var(--accent)}
+.tag.con{background:rgba(220,38,38,0.08);color:#ff6b6b}
+.hidden{display:none}
+footer{max-width:900px;margin:18px auto;color:var(--muted);text-align:center}
+
+@media(min-width:800px){main{grid-template-columns:1fr 360px} #topics{grid-column:2} #new-topic{grid-column:1}}
